@@ -1,0 +1,99 @@
+body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  box-sizing: border-box;
+  background-color: black;
+}
+#wrapper {
+  background-color: white;
+  border-radius: 12px;
+  padding: 1.125rem;
+  max-width: 800px;
+  min-width: 200px;
+}
+#text {
+  display: flex;
+  margin: auto 0;
+  font-size: 2.5rem;
+}
+#author {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 0;
+  padding-top: 1.5rem;
+  font-size: 1.5rem;
+  font-family: "Open Sans", sans-serif;
+}
+#buttons {
+  margin-top: 2rem;
+  margin-right: 1.125rem;
+  font-size: 1.5rem;
+}
+#quote {
+  display: flex;
+  font-size: 2rem;
+  margin-bottom: 1vh;
+  margin-right: 1.5vw;
+}
+a:visited,
+a:hover,
+a:focus,
+a:active {
+  text-decoration: none;
+  color: black;
+}
+.font-1 {
+  font-family: "Architects Daughter", cursive;
+}
+.font-2 {
+  font-family: "Bebas Neue", cursive;
+}
+.font-3 {
+  font-family: "Lora", serif;
+}
+.font-4 {
+  font-family: "Ephesis", cursive;
+}
+.font-5 {
+  font-family: "Poppins", sans-serif;
+}
+@media screen and (max-width: 480px) {
+  #text {
+    display: flex;
+    margin: auto 0;
+    font-size: 1.5rem;
+  }
+  #buttons {
+    margin-top: 2rem;
+    margin-right: 1.125rem;
+    font-size: 1.125rem;
+  }
+  #quote {
+    display: flex;
+    font-size: 1.125rem;
+    margin-bottom: 1vh;
+    margin-right: 1.5vw;
+  }
+  #author {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin: 0;
+    padding-top: 1.5rem;
+    font-size: 1.125rem;
+    font-family: "Open Sans", sans-serif;
+  }
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+}
+
+.animate-flicker {
+  animation: fadeIn 3s;
+}

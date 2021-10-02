@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>randomQuoteMachine</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,300&display&family=Architects+Daughter&family=Bebas+Neue&family=Ephesis&family=Lora&family=Poppins&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  </head>
+  <body id="body">
+    <div id="wrapper">
+      <div id="quote-box">
+        <p id="text"><i id="quote" class="fa fa-quote-left"></i>Fail is a choice</p>
+        <p id="author">- Icszal</p>
+        <div id="buttons">
+          <i class="fa fa-font" onclick="changeFont()"></i>
+          <i class="fa fa-caret-square-o-right" id="new-quote" onclick="getQuotes(), changeColor()"></i>
+          <a id="tweet-quote" target="_blank" onclick="tweetIntent()"><i class="fa fa-twitter-square"></i></a>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</html>
